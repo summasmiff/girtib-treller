@@ -11005,7 +11005,7 @@ a {
 }
 
 body {
-  background: #fafafa;
+  background-color: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   display: -webkit-flex;
@@ -11015,6 +11015,23 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+div::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url(ermagerd.jpg);
+  background-position: right 2%;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 main {
